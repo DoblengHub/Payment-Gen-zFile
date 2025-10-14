@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor Pembayaran GENZ (Digital Dark Mode)</title>
+    <style>
+        /* Gaya Dasar Digital Dark Mode */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            background-color: #0d0d0d;
+            color: #00ff00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: #1c1c1c;
+            padding: 25px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px #00ff00;
+            border: 1px solid #00ff00;
+        }
+        h1 {
+            color: #00ffff;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 10px;
+            text-shadow: 0 0 5px #00ffff;
+        }
+
+        /* Gaya Transaksi Berjalan (Marquee) */
+        .marquee-box {
+            background-color: #111;
+            padding: 10px 0;
+            margin-bottom: 30px;
+            border-radius: 3px;
+            border: 1px solid #00ff00;
+            overflow: hidden;
+            box-shadow: inset 0 0 5px #00ff00;
+        }
+        .transaction-text {
+            white-space: nowrap;
+            padding-right: 50px;
+            color: #00ff00;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .separator { color: #00ffff; margin: 0 15px; }
+        .status {
+            color: #ff00ff;
+            font-weight: bold;
+        }
+
+        /* Gaya Kotak Akun */
+        .account-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #222;
+            border: 1px solid #00ff00;
+            border-radius: 3px;
+            box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+        }
+        .platform-name {
+            font-weight: bold;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        .logo-img {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+        .gopay-img {
+            border-radius: 50%;
+        }
+        
+        /* Nomor Disensor */
+        .number-display {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ffff00;
+            letter-spacing: 1px;
+        }
+
+        /* Gaya Tombol Salin & Catatan Penting */
+        .copy-button {
+            background-color: #008000;
+            color: white;
+            border: 1px solid #00ff00;
+            padding: 8px 12px;
+            font-size: 0.9em;
+            margin-left: 15px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            white-space: nowrap;
+        }
+        .copy-button:hover {
+            background-color: #00b300;
+            box-shadow: 0 0 8px #00ff00;
+        }
+        .copy-button-success { 
+            background-color: #ff00ff !important;
+            box-shadow: 0 0 8px #ff00ff !important;
+        }
+        
+        /* Gaya Kotak Saluran WhatsApp */
+        .whatsapp-channel {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #111;
+            border: 1px solid #00ffff;
+            border-radius: 3px;
+            text-align: center;
+            box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+        }
+        .whatsapp-channel a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        .whatsapp-channel a:hover {
+            color: #fff;
+            text-shadow: 0 0 5px #00ffff;
+        }
+
+        .note {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #3e003e;
+            color: #ff00ff;
+            border: 1px solid #ff00ff;
+            border-left: 5px solid #ff00ff;
+            border-radius: 3px;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 0 0 3px #ff00ff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>💳 SYSTEM PAYMENTS GENZ</h1>
+
+        <div class="marquee-box">
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+                <span class="transaction-text">0812xxxx1101 (Rian S) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0857xxxx2204 (Lina W) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0896xxxx3312 (Bima J) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0813xxxx4407 (Sinta P) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0878xxxx5599 (Faisal B) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0821xxxx6600 (Gita D) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0852xxxx7711 (Eko A) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0899xxxx8822 (Dewi N) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0818xxxx9933 (Hendra T) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0877xxxx0044 (Irene M) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0815xxxx1234 (Fikri Z) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0856xxxx5678 (Maya L) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0895xxxx9012 (Nanda K) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0819xxxx3456 (Dandi G) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0875xxxx7890 (Cika Q) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0823xxxx1122 (Joni X) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0853xxxx3344 (Tia R) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0898xxxx5566 (Yanto V) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0811xxxx7788 (Zizi U) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0876xxxx9900 (Wawan P) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0814xxxx1010 (Kiki B) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0858xxxx2121 (Lulu C) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0897xxxx3232 (Mira D) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0817xxxx4343 (Nino E) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0879xxxx5454 (Oscar F) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0824xxxx6565 (Putri G) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0851xxxx7676 (Rizky H) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0894xxxx8787 (Santi I) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0816xxxx9898 (Tomi J) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0874xxxx0909 (Uli K) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0825xxxx1011 (Vino L) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0855xxxx2122 (Wina M) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0893xxxx3233 (Xander N) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0810xxxx4344 (Yuni O) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0873xxxx5455 (Zaki P) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0826xxxx6566 (Ali Q) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0854xxxx7677 (Bela R) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0892xxxx8788 (Cipto S) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0813xxxx9899 (Dina T) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0872xxxx0101 (Fajar U) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0827xxxx1212 (Gisel V) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0859xxxx2323 (Hafiz W) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0891xxxx3434 (Indra X) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0814xxxx4545 (Jihan Y) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0871xxxx5656 (Koko Z) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0828xxxx6767 (Lala A) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0850xxxx7878 (Miko B) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0890xxxx8989 (Nia C) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0811xxxx9090 (Pram D) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0870xxxx0102 (Reni E) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0829xxxx1213 (Sigit F) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0853xxxx2324 (Tika G) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0894xxxx3435 (Umar H) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0810xxxx4546 (Vina I) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0876xxxx5657 (Wayan J) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0821xxxx6768 (Xena K) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0852xxxx7879 (Yudi L) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0897xxxx8990 (Zahra M) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0815xxxx0111 (Anton N) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0875xxxx1222 (Bagas O) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0822xxxx2333 (Cici P) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0858xxxx3444 (Dani Q) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0896xxxx4555 (Elsa R) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0813xxxx5666 (Gatot S) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0878xxxx6777 (Hesti T) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0825xxxx7888 (Irfan U) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0851xxxx8999 (Juli V) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0891xxxx9000 (Karin W) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0810xxxx1111 (Lutfi X) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0874xxxx2222 (Mega Y) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0826xxxx3333 (Nuri Z) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0857xxxx4444 (Owen A) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0895xxxx5555 (Putu B) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0819xxxx6666 (Rosi C) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0871xxxx7777 (Sandy D) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0828xxxx8888 (Tania E) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0850xxxx9999 (Ucok F) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0890xxxx0000 (Vio G) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0811xxxx1001 (Wira H) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0870xxxx2002 (Xandra I) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0829xxxx3003 (Yayan J) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0854xxxx4004 (Ziva K) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0899xxxx5005 (Adi L) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0812xxxx6006 (Banu M) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0877xxxx7007 (Citra N) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0823xxxx8008 (Dodo O) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0856xxxx9009 (Eka P) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0898xxxx0101 (Fifi Q) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0815xxxx1212 (Galih R) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0876xxxx2323 (Hani S) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0824xxxx3434 (Iqbal T) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0853xxxx4545 (Joko U) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0892xxxx5656 (Kania V) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0816xxxx6767 (Laras W) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0879xxxx7878 (Mamat X) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0827xxxx8989 (Nina Y) ✅ Done</span>
+                <span class="separator">|</span>
+                <span class="transaction-text">0859xxxx9090 (Oji Z) ✅ Done</span>
+                <span class="separator">|</span>
+            </marquee>
+        </div>
+
+        <div class="account-box dana-box">
+            <div class="info">
+                <div class="platform-name">
+                    <img src="https://i.ibb.co/nNN8W0FM/dana-logo-square-rounded-dana-logo-free-download-dana-logo-free-png.png" alt="Logo DANA" class="logo-img">
+                    DANA [E-WALLET]
+                </div>
+                <div class="number-display" data-full-number="083138033541">0831xxxx3541</div>
+            </div>
+            <button class="copy-button" onclick="copyToClipboard(this)">SALIN NOMOR</button>
+        </div>
+
+        <div class="account-box gopay-box">
+            <div class="info">
+                <div class="platform-name">
+                    <img src="https://i.ibb.co/5x8bCGWq/3d-gopay-coin-illustration-594033-1.jpg" alt="Logo GoPay" class="logo-img gopay-img">
+                    GOPAY [E-WALLET]
+                </div>
+                <div class="number-display" data-full-number="083138033541">0831xxxx3541</div>
+            </div>
+            <button class="copy-button" onclick="copyToClipboard(this)">SALIN NOMOR</button>
+        </div>
+        
+        <div class="whatsapp-channel">
+            <a href="https://whatsapp.com/channel/0029Vb6U4MBFCCoVtVwXus1o" target="_blank" rel="noopener noreferrer">
+                Ikuti saluran ⡷⠂ꜱᴛᴏʀᴇ ɢᴇɴ'ᴢ ɴᴏꜱᴇᴘ⠐⢾ di WhatsApp
+            </a>
+        </div>
+        <div class="note">
+            ⚠️ KONFIRMASI PENTING ⚠️<br>
+            TRANSFER DENGAN BENAR, DAN WAJIB SS BUKTI TRANSFER KE WHATSAPP!
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(button) {
+            // Temukan elemen nomor yang disensor (teksnya adalah nomor yang disensor)
+            const numberDisplayElement = button.closest('.account-box').querySelector('.number-display');
+            
+            // Ambil nomor lengkap dari attribute data-full-number
+            const fullNumber = numberDisplayElement.getAttribute('data-full-number');
+
+            if (!navigator.clipboard) {
+                alert('Sistem tidak mendukung fitur salin. Silakan salin manual.');
+                return;
+            }
+
+            // Salin nomor LENGKAP ke clipboard
+            navigator.clipboard.writeText(fullNumber)
+                .then(() => {
+                    const originalText = button.textContent;
+                    button.textContent = '[SUCCESS] NOMOR TERSALIN!';
+                    button.classList.add('copy-button-success');
+
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                        button.classList.remove('copy-button-success');
+                    }, 2500);
+                })
+                .catch(err => {
+                    console.error('ERROR: Gagal menyalin: ', err);
+                    alert('ERROR: Gagal menyalin. Silakan salin manual.');
+                });
+        }
+    </script>
+
+</body>
+</html>
